@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="utf-8">
+       <title>Hello world</title>
+       <style>/** CRITICAL CSS HERE  */</style>
+       <!-- PLEASE... DO NOT LOAD CSS OR JS FILES HERE (<link><script>) because it blocks the rendering -->
+   </head>
+   <body>
+       <!-- HTML HERE -->
+       <div>...</div>
+
+
+       <!-- Load JS files with 'defer' to not block rendering -->
+       <script src=".." defer></script>
+
+
+       <!-- CRITICAL JS HERE (always at the end) -->
+       <script>
+           "use strict" /* => Use ‘strict’ to force you making less JS errors */
+           document.addEventListener("DOMContentLoaded", function() {
+             /* Here we can use : 'document' */
+           });
+       </script>
+
+       <!-- Load CSS Files here or better in async => do not block rendering -->
+       <link rel="stylesheet" href="style.css"/>
+   </body>
+</html>
